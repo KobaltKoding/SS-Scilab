@@ -1,0 +1,5 @@
+z=%z;
+num=2*z*(2*z-1)
+den= (z-1)*(z-2)^2
+h=ldiv(num,den,10)
+disp(h,"displaying the first 10 terms of inverse z transform.")

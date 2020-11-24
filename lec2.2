@@ -1,0 +1,19 @@
+clc ;
+ clear all;
+ 
+ x = [1,2,3,4] ;
+ h = [2,3,4,5,6] ;
+ m = length ( x ) ;
+ n = length ( h ) ;
+ //Method 1 U si ng D i r e c t C o n v ol u ti o n Sum Formula
+ for i = 1: n +m -1
+ conv_sum = 0;
+ for j = 1: i
+ if ((( i - j +1) <= n ) &( j <= m ) )
+ conv_sum = conv_sum + x ( j ) * h (i -j +1) ;
+ end ;
+ y ( i ) = conv_sum ;
+ z=conv(x,h);
+ end ;
+ end ;
+ 
